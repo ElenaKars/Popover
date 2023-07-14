@@ -1,5 +1,5 @@
-export default class Popover{
-  constructor(element){
+export default class Popover {
+  constructor(element) {
     this.element = element;
     this.title = element.getAttribute('title');
     this.content = element.getAttribute('data-content');
@@ -23,13 +23,14 @@ export default class Popover{
     return popover;
   }
 
-  positionPopover(){
+  positionPopover() {
     this.element.parentElement.appendChild(this.popover);
-    const {offsetTop: top, offsetLeft: left, offsetWidth: width } = this.element;
+    const { offsetTop: top, offsetLeft: left, offsetWidth: width } = this.element;
     this.popover.style.top = `${top - this.popover.offsetHeight - 5}px`;
-    this.popover.style.left = `${left + width / 2 - this.popover.offsetWidth / 2}px`
+    this.popover.style.left = `${left + width / 2 - this.popover.offsetWidth / 2}px`;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   removePopover() {
     const currentPopover = document.querySelector('.popover');
     if (currentPopover) {
