@@ -1,5 +1,3 @@
-// TODO: write code here
-
 export default class Popover{
   constructor(element){
     this.element = element;
@@ -28,7 +26,7 @@ export default class Popover{
   positionPopover(){
     this.element.parentElement.appendChild(this.popover);
     const {offsetTop: top, offsetLeft: left, offsetWidth: width } = this.element;
-    this.popover = style.top = `${top - this.popover.offsetHeight - 5}px`;
+    this.popover.style.top = `${top - this.popover.offsetHeight - 5}px`;
     this.popover.style.left = `${left + width / 2 - this.popover.offsetWidth / 2}px`
   }
 

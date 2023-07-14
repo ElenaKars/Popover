@@ -1,3 +1,6 @@
-// TODO: write code here
+import Element from './Element';
 
-console.log('app.js bundled');
+document.querySelectorAll('.button').forEach((el) => {
+  const element = new Element(el);
+  element.init();
+});
