@@ -12,7 +12,6 @@ export default class Element {
     document.addEventListener('click', this.onDocumentClick.bind(this));
   }
 
-
   togglePopover() {
     if (this.isPopoverVisible) {
       this.popover.removePopover();
@@ -29,22 +28,22 @@ export default class Element {
     }
   }
 }
-  // onClick(e) {
-  //   e.preventDefault();
-  //   const currentPopover = document.querySelector('.popover');
+// onClick(e) {
+//   e.preventDefault();
+//   const currentPopover = document.querySelector('.popover');
 
-  //   if (
-  //     currentPopover &&
-  //     currentPopover.querySelector('.popovertitle').textContent ===
-  //     this.element.getAttribute('title')
-  //   ) {
-  //     this.popover.removePopover();
-  //   } else {
-  //     this.popover.positionPopover();
-  //   }
-  // }
+//   if (
+//     currentPopover &&
+//     currentPopover.querySelector('.popovertitle').textContent ===
+//     this.element.getAttribute('title')
+//   ) {
+//     this.popover.removePopover();
+//   } else {
+//     this.popover.positionPopover();
+//   }
+// }
 
-  // onBlur() {
-  //   this.popover.removePopover();
-  // }
-//}
+// onBlur() {
+//   this.popover.removePopover();
+// }
+// }
