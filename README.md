@@ -12,8 +12,6 @@ Rules for submitting assignments:
 
 ### Popovers
 
-#### Legend
-
 There is a wonderful Bootstrap framework, which implements quite a lot of interesting widgets using jQuery. But, as modern and trendy programmers say, "jQuery is not needed", so you need to implement the same widget in pure JS.
 
 #### Description
