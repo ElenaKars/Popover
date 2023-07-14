@@ -22,16 +22,19 @@ describe('Element class', () => {
     container.remove();
   });
 
-  test('should show popover on click', () => {
-    button.click();
-    const popoverElement = document.querySelector('.popover');
-    expect(popoverElement).toBeTruthy();
-  });
+  test('should show and hide popover on click', () => {
+    // Initial state
+    let popoverElement = document.querySelector('.popover');
+    expect(popoverElement).toBeFalsy();
 
-  test('should hide popover on blur', () => {
-    button.focus();
-    button.blur();
-    const popoverElement = document.querySelector('.popover');
+    // Click to show popover
+    button.dispatchEvent(new MouseEvent('click'));
+    popoverElement = document.querySelector('.popover');
+    expect(popoverElement).toBeTruthy();
+
+    // Click again to hide popover
+    button.dispatchEvent(new MouseEvent('click'));
+    popoverElement = document.querySelector('.popover');
     expect(popoverElement).toBeFalsy();
   });
 });
