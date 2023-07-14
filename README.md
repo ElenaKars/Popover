@@ -1,30 +1,30 @@
-# Домашнее задание к занятию "Работа с HTML-формами"
+# Coding challenge "2. EVENT"
+![CI](https://github.com/ElenaKars/Popover/actions/workflows/web.yml/badge.svg)
 
-Правила сдачи задания:
-1. **Важно**: в рамках этого ДЗ вы можете использовать любой пакетный менеджер
-2. Всё должно собираться через Webpack (включая картинки и стили) и выкладываться на Github Pages через Appveyor.
-3. В README.md должен быть размещён бейджик сборки и ссылка на Github Pages
-4. В качестве результата присылайте проверяющему ссылки на ваши GitHub-проекты.
+Rules for submitting assignments:
+
+1. **Important**: within this coding you can use any package manager
+1. **Important**: Everything must be collected via Webpack (including images and styles) and laid out on Github Pages via Appveyor.
+1. README.md should contain build badge and link to Github Pages
+1. As a result, send the reviewer links to your GitHub projects
 
 ---
 
 ### Popovers
 
-#### Легенда
+#### Legend
 
-Есть замечательный фреймворк Bootstrap, в котором реализовано достаточно много интересных виджетов с использованием jQuery. Но, как говорят современные и модные программисты, "jQuery не нужен", поэтому вам нужно реализовать такой же виджет на чистом JS.
+There is a wonderful Bootstrap framework, which implements quite a lot of interesting widgets using jQuery. But, as modern and trendy programmers say, "jQuery is not needed", so you need to implement the same widget in pure JS.
 
-#### Описание
+#### Description
 
-Вот так должен выглядеть виджет в целом, для упрощения будем считать, что виджет всегда должен показываться сверху.
+This is how the widget as a whole should look like, for simplicity, we will assume that the widget should always be shown on top.
 
 ![](./pic/Popovers.png)
 
 
-У popover'а обязательно должно быть название и текст. Центрироваться он обязательно должен по горизонтали относительно элемента, который вызвал popover'а.
+A popover must have a title and text. It must be centered horizontally relative to the element that caused the popover.
 
-Не забудьте написать авто-тест на взаимодействие с DOM на базе Puppeteer или JSDOM (на ваш выбор).
+Don't forget to write an auto-test for DOM interaction based on Puppeteer or JSDOM (your choice).
 
-**Подсказка**: страница, на которой можно "подглядеть" реализацию: https://getbootstrap.com/docs/4.3/components/popovers/. Но мы пока не проходили `translate`, `translate3d`, поэтому делайте позиционирование в px.
-
----
+**Hint**: A page where you can "peek" the implementation: https://getbootstrap.com/docs/4.3/components/popovers/. But we haven't gone through `translate`, `translate3d` yet, so do the positioning in px.
